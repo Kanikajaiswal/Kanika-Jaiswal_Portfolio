@@ -138,11 +138,14 @@ profile-photo .img{
 .FirstElement .profile-photo img:hover{
   transform: scale(1.2);
 }
-.profile-text{
-  max-width: 750px;
-  display: flex;
-  flex-direction: column;
+.profile-text h1 {
+  color: #fed700;
+  /* font scales between 1.8rem and 4rem, with an ideal value of 6.5vw */
+  font-size: clamp(1.8rem, 6.5vw, 4rem);
+  line-height: 1.05;
+  margin: 0;
 }
+
 .profile-text h5{
   color: #e5e5e5;
   font-size: 14px;
